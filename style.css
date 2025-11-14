@@ -1,0 +1,165 @@
+/* 1. CSS Variables for Easy Customization */
+:root {
+    --primary-color: #007bff; /* Your signature blue */
+    --text-color: #333;
+    --background-color: #ffffff;
+    --content-bg: #f9f9f9;
+    --font-body: 'Arial', sans-serif; /* Your chosen signature font */
+    --font-heading: 'Georgia', serif;
+}
+
+/* 2. Global Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--content-bg);
+}
+
+/* 3. Header Styling */
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.site-header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: var(--font-heading);
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* 4. Main Layout (Using Grid for Content + Sidebar) */
+.content-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    /* This creates the main content column (70%) and sidebar (30%) */
+    grid-template-columns: 3fr 1fr; /* Example: 75% Content, 25% Sidebar */
+    gap: 40px;
+}
+
+/* 5. Post List Styling (Home Page) */
+.post-list h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+.blog-post-card {
+    background: var(--background-color);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.blog-post-card h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-family: var(--font-heading);
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin: 5px 0 15px 0;
+}
+
+.read-more-btn {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* 6. Sidebar Styling */
+.sidebar {
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 5px;
+}
+
+.sidebar h4 {
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+.sidebar ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* 7. Single Post View Adjustments */
+.single-post .sidebar {
+    /* You can hide the sidebar or change its content if you wish */
+}
+
+.full-article h3 {
+    margin: 20px 0 10px 0;
+    font-family: var(--font-heading);
+}
+
+/* Code Formatting */
+.article-body pre {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    overflow-x: auto;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/* 8. Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    color: #7f8c8d;
+    font-size: 0.85em;
+    margin-top: 40px;
+}
+
+
+/* 9. Basic Responsiveness (Crucial for a Real Site) */
+@media (max-width: 800px) {
+    /* Stack the content and sidebar vertically on small screens */
+    .content-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
