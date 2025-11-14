@@ -126,6 +126,7 @@ body {
 
 /* 7. Single Post View Adjustments */
 .single-post .sidebar {
+    color: #007bff;
     /* You can hide the sidebar or change its content if you wish */
 }
 
