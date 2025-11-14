@@ -1,6 +1,6 @@
 /* 1. CSS Variables for Easy Customization */
 :root {
-    --primary-color: #007bff; /* Your signature blue */
+    --primary-color: #257583; /* Your signature blue */
     --text-color: #333;
     --background-color: #ffffff;
     --content-bg: #f9f9f9;
@@ -127,6 +127,7 @@ body {
 /* 7. Single Post View Adjustments */
 .single-post .sidebar {
     color: #007bff;
+    
     /* You can hide the sidebar or change its content if you wish */
 }
 
