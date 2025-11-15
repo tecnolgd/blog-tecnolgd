@@ -151,7 +151,8 @@ body {
     text-align: center;
     padding: 20px 0;
     border-top: 1px solid #ccc;
-    color: #7f8c8d;
+    color: #d0d6d6;
+    background-color: #46666b;
     font-size: 0.85em;
     margin-top: 40px;
 }
