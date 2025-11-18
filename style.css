@@ -1,6 +1,6 @@
 /* 1. CSS Variables for Easy Customization */
 :root {
-    --primary-color: #257583; /* Your signature blue */
+    --primary-color: #337e8b; /* Your signature blue */
     --text-color: #333;
     --background-color: #ffffff;
     --content-bg: #f9f9f9;
@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 18px;
 }
 
 .site-header h1 a {
@@ -161,7 +161,6 @@ body {
     font-size: 0.85em;
     margin-top: 40px;
 }
-
 
 /* 9. Basic Responsiveness (Crucial for a Real Site) */
 @media (max-width: 800px) {
