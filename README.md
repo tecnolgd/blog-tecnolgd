@@ -1,4 +1,4 @@
-![MIT License](https://img.shields.io/github/license/tecnolgd/blog-tecnlogd?style=flat)
+![MIT License](https://img.shields.io/github/license/tecnolgd/blog-tecnolgd?style=flat)
 ![Static Badge](https://img.shields.io/badge/tools-Open_Source-blue)
 ![Static Badge](https://img.shields.io/badge/interface-web-teal)
 ![Static Badge](https://img.shields.io/badge/version-v1.0.0-red)
