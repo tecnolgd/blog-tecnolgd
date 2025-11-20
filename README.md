@@ -1,9 +1,9 @@
-# 📄 [Your Signature Blog Template Name]
+# 📄 In the Shadows 
 
-### Project Name: [Insert Catchy Template Name Here]
+### Project Name: blog-tecnolgd
 ### Status: Production Ready (v1.0.0)
 
-This project is a **minimalist, high-performance blog template** built entirely from scratch using only HTML and CSS. It was created to demonstrate complete control over the front-end design, prioritizing speed, readability, and a unique signature aesthetic.
+This project is a **minimalist, high-performance blog template** built entirely from scratch using **only HTML and CSS**. It was created to demonstrate complete control over the front-end design, prioritizing speed, readability, and a unique signature aesthetic.
 
 ## ✨ Signature Features
 
