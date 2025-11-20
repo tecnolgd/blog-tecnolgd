@@ -4,7 +4,7 @@
 ![Static Badge](https://img.shields.io/badge/version-v1.0.0-red)
 ![Travis (.com)](https://img.shields.io/travis/com/tecnolgd/blog-tecnlogd-cpp)
 
-# 📄 In the Shadows 
+# In the Shadows 
 
 ### Project Name: blog-tecnolgd
 ### Status: Production Ready (v1.0.0)
