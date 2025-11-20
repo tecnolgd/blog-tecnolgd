@@ -1,10 +1,10 @@
 /* 1. CSS Variables for Easy Customization */
 :root {
-    --primary-color: #337e8b; /* Your signature blue */
-    --text-color: #333;
-    --background-color: #ffffff;
-    --content-bg: #f9f9f9;
-    --font-body: 'Arial', sans-serif; /* Your chosen signature font */
+    --primary-color: #419fa4; 
+    --text-color: #2b2c2d;
+    --background-color: #e7edf4;
+    --content-bg: #e2e9e9;
+    --font-body: 'Arial', sans-serif; 
     --font-heading: 'Georgia', serif;
 }
 
@@ -65,7 +65,7 @@ body {
     display: grid;
     /* This creates the main content column (70%) and sidebar (30%) */
     grid-template-columns: 3fr 1fr; /* Example: 75% Content, 25% Sidebar */
-    gap: 40px;
+    gap: 38px;
 }
 /* 5. Post List Styling (Home Page) */
 .post-list h2 {
