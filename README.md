@@ -5,8 +5,6 @@
 
 This project is a **minimalist, high-performance blog template** built entirely from scratch using only HTML and CSS. It was created to demonstrate complete control over the front-end design, prioritizing speed, readability, and a unique signature aesthetic.
 
----
-
 ## ✨ Signature Features
 
 * **Zero Dependencies:** No frameworks (Bootstrap, Tailwind, etc.), JavaScript, or preprocessors. Pure, hand-written(typed 💀) HTML and CSS.
@@ -14,8 +12,6 @@ This project is a **minimalist, high-performance blog template** built entirely 
 * **Responsive Layout:** Fully optimized for mobile, tablet, and desktop screens using native CSS Grid and Flexbox.
 * **Signature Aesthetic:** Features a distinct color palette and typography (defined in `style.css` variables) to provide a truly unique look.
 * **Semantic Structure:** Uses modern HTML5 tags (`<header>`, `<main>`, `<article>`, `<aside>`, `<footer>`) for excellent accessibility and SEO.
-
----
 
 ## 🚀 Getting Started
 
@@ -82,7 +78,10 @@ content-container {
 }
 ```
 
-##
+## Value this repo ?✨
+* If this repository added value to your learning or dev flow ,consider dropping a *⭐*or hitting *fork*.
+* Open for recieving feedback and knowledge exchange.
+
 ## Credits
 Author: tecnolgd
 Built with: Boring HTML and CSS with ambition to control every damn pixel💀.
