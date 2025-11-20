@@ -64,11 +64,11 @@ Open `style.css` and modify the CSS variables near the top to instantly change t
 ```css
 /* 1. CSS Variables for Easy Customization */
 :root {
-    --primary-color: #007bff; /*<- CHANGE THIS: your Main accent
-    --text-color: #333;
-    --background-color: #ffffff;
-    --font-body: 'Arial', sans-serif; /* <- CHANGE THIS: Your Main Font */
-    --font-heading: 'Georgia', serif; /* <- CHANGE THIS: Your Heading Font */
+    --primary-color: #419fa4; /*<- CHANGE This: Your Main accent*/
+    --text-color: #2b2c2d;
+    --background-color: #e7edf4;
+    --content-bg: #e2e9e9; /* <- CHANGE This: Your Main Font */
+    --font-heading: 'Georgia', serif; /* <- CHANGE This: Your Heading Font */
 }
 ```
 ### 2.2. Layout (Content vs. Sidebar)
@@ -78,7 +78,7 @@ content-container {
     /* ... other styles ... */
     grid-template-columns: 3fr 1fr; /* 3 parts Content, 1 part Sidebar */
     /* Adjust these fractions (e.g., 4fr 1fr) to change the width balance. */
-    gap: 40px;
+    gap: 38px;
 }
 ```
 
