@@ -83,5 +83,5 @@ content-container {
 * Open for recieving feedback and knowledge exchange.
 
 ## Credits
-Author: tecnolgd
-Built with: Boring HTML and CSS with ambition to control every damn pixel💀.
+Author: ***tecnolgd***
+Built with: Boring HTML and CSS with ambition to control every damn pixel 💀.
