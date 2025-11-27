@@ -20,11 +20,9 @@ This project is a **minimalist, high-performance blog template** built entirely 
 * **Semantic Structure:** Uses modern HTML5 tags (`<header>`, `<main>`, `<article>`, `<aside>`, `<footer>`) for excellent accessibility and SEO.
 
 ## 🚀 Getting Started
-
 This repository consists of simple static files. To run it, you just need a web browser.
 
 ### Prerequisites
-
 * A modern web browser (Chrome, Firefox, Safari, Edge).
 * A code editor (VS Code, Sublime Text, etc.).
 
@@ -42,7 +40,6 @@ This repository consists of simple static files. To run it, you just need a web 
     * And same tip applies for the other `.html` files.
 
 ### Template Files
-
 The repository contains the following core files:
 
 | File Name | Purpose |
@@ -56,7 +53,6 @@ The repository contains the following core files:
 ---
 
 ## 🎨 Customization Guide
-
 Your signature is defined by the contents of **`style.css`**.
 
 ### 1. Variables
