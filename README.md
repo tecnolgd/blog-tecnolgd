@@ -47,7 +47,7 @@ The repository contains the following core files:
 | **`index.html`** | The main blog landing page, listing recent articles. |
 | **`post.html`** | The template for viewing a single, full article (the main content). |
 | **`style.css`** | The complete, hand-written stylesheet for the entire site. **(Customization starts here!)** |
-| `project.html` | (Optional: Add your project details page here.) |
+| `update.html` | (Optional: Add your updates page here.) |
 | `about.html` | (Optional: Add your About page template here.) |
 
 ---
