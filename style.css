@@ -4,7 +4,7 @@
     --primary-light: #5cb3b8;
     --text-color: #2b2c2d;
     --text-light: #666666;
-    --background-color: #e7edf4;
+    --background-color: #f8fafb;
     --content-bg: #e2e9e9;
     --border-color: #d0d6d6;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -364,25 +364,29 @@ body {
 }
 
 @media (max-width: 640px) {
+    .site-header {
+        padding: 12px 0;
+    }
+
     .site-header h1 a {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .site-header nav {
         display: flex;
-        flex-direction: column;
-        gap: 8px;
+        flex-direction: row;
+        gap: 12px;
     }
 
     .site-header nav a {
         margin-left: 0;
-        font-size: 13px;
+        font-size: 12px;
         padding: 4px 0;
     }
 
     .header-container {
-        flex-direction: column;
-        gap: 16px;
+        padding: 0 12px;
+        gap: 12px;
     }
 
     .content-container {
