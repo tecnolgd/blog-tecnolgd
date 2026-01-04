@@ -80,6 +80,7 @@ Customize fonts by changing the `--font-body` and `--font-heading` variables. Th
 
 ### 3. Layout (Content vs. Sidebar)
 The main layout uses CSS Grid for the two-column structure (Section 4 in style.css):
+
 ```css
 .content-container {
     grid-template-columns: 2.5fr 1fr;  /* 2.5 parts Content, 1 part Sidebar */
