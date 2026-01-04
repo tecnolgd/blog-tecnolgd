@@ -1,11 +1,16 @@
 /* 1. CSS Variables for Easy Customization */
 :root {
-    --primary-color: #419fa4; 
-    --text-color: #2b2c2d;
-    --background-color: #e7edf4;
-    --content-bg: #e2e9e9;
-    --font-body: 'Arial', sans-serif; 
-    --font-heading: 'Georgia', serif;
+    --primary-color: #2c5aa0;
+    --primary-light: #4a7ec0;
+    --text-color: #1a1a1a;
+    --text-light: #666666;
+    --background-color: #f8fafb;
+    --content-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.12);
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    --font-heading: 'Georgia', 'Garamond', serif;
 }
 
 /* 2. Global Reset and Body Styling */
@@ -17,16 +22,23 @@
 
 body {
     font-family: var(--font-body);
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--text-color);
-    background-color: var(--content-bg);
+    background-color: var(--background-color);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* 3. Header Styling */
 .site-header {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--content-bg);
+    border-bottom: 1px solid var(--border-color);
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
 }
 
 .header-container {
@@ -35,159 +47,384 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 18px;
+    padding: 0 20px;
 }
 
 .site-header h1 a {
-    color: rgb(220, 220, 221);
+    color: var(--primary-color);
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .site-header nav a {
-    color: rgb(219, 224, 224);
+    color: var(--text-color);
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;font-size: 18px;
-
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    transition: color 0.3s ease;
 }
-.site-header nav a:hover{
-    color: #0d293a;
-    transition: 0.3s;
+
+.site-header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.site-header nav a:hover {
+    color: var(--primary-color);
+}
+
+.site-header nav a:hover::after {
+    width: 100%;
 }
 
 /* 4. Main Layout (Using Grid for Content + Sidebar) */
 .content-container {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 0 20px;
     display: grid;
-    /* This creates the main content column (70%) and sidebar (30%) */
-    grid-template-columns: 3fr 1fr; /* Example: 75% Content, 25% Sidebar */
-    gap: 38px;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 48px;
 }
+
 /* 5. Post List Styling (Home Page) */
 .post-list h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    border-left: 4px solid var(--primary-color);
-    padding-left: 10px;
-    
+    font-size: 2.2em;
+    margin-bottom: 32px;
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .blog-post-card {
-    background: var(--background-color);
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: var(--content-bg);
+    padding: 28px;
+    margin-bottom: 28px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.blog-post-card:hover {
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-light);
+}
+
+.blog-post-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
 .blog-post-card h3 a {
-    color: #2c3e50;
+    color: var(--primary-color);
     text-decoration: none;
+    transition: color 0.3s ease;
     font-family: var(--font-heading);
+}
+
+.blog-post-card h3 a:hover {
+    color: var(--primary-light);
 }
 
 .post-meta {
     font-size: 0.9em;
-    color: #7f8c8d;
-    margin: 5px 0 15px 0;
+    color: var(--text-light);
+    margin: 8px 0 16px 0;
+    font-weight: 500;
+}
+
+.post-summary {
+    font-size: 1em;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 16px;
 }
 
 .read-more-btn {
     display: inline-block;
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
+    font-weight: 600;
+    margin-top: 12px;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
-#articleCat{
-    font-weight: 200;
-    color: #4e676b;
+.read-more-btn:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+#articleCat {
+    font-weight: 500;
+    color: var(--primary-color);
 }
 /* 6. Sidebar Styling */
-.categories{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #1d3645;
+.categories {
+    font-family: var(--font-body);
+    color: var(--text-color);
 }
+
 .sidebar {
-    padding: 20px;
-    background: #c4dbe1;
-    border-radius: 5px;
-    
+    padding: 24px;
+    background: var(--content-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
 }
 
 .sidebar h4 {
-    border-bottom: 1px solid #bdc3c7;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
     color: var(--primary-color);
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 .sidebar ul {
     list-style: none;
-    
 }
+
 .sidebar ul li {
-    margin-bottom: 5px;
-    
+    margin-bottom: 8px;
 }
+
 .sidebar ul li a {
-    
+    color: var(--primary-color);
     text-decoration: none;
-    
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    color: var(--primary-light);
 }
 
 /* 7. Single Post View Adjustments */
-.single-post .sidebar {
-    color:#337e8b
-    
-    
-    /* You can hide the sidebar or change its content if you wish */
+.single-post {
+    margin-top: 40px;
+}
+
+.full-article {
+    background: var(--content-bg);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.full-article h2 {
+    font-size: 2em;
+    margin-bottom: 12px;
+    color: var(--text-color);
+    font-weight: 600;
 }
 
 .full-article h3 {
-    margin: 20px 0 10px 0;
+    margin: 28px 0 12px 0;
     font-family: var(--font-heading);
+    font-size: 1.4em;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.full-article h4 {
+    margin: 20px 0 10px 0;
+    font-size: 1.15em;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.article-body {
+    line-height: 1.9;
+    font-size: 1.05em;
+}
+
+.article-body p {
+    margin-bottom: 16px;
+    color: var(--text-color);
 }
 
 /* Code Formatting */
 .article-body pre {
-    background: #2c3e50;
-    color: white;
-    padding: 15px;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 16px;
     overflow-x: auto;
-    border-radius: 4px;
-    margin: 20px 0;
+    border-radius: 6px;
+    margin: 24px 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.post-footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+.post-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.post-footer a:hover {
+    color: var(--primary-light);
 }
 
 /* 8. Footer */
 .site-footer {
     text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #ccc;
-    color: #d0d6d6;
-    background-color: #46666b;
-    font-size: 0.85em;
-    margin-top: 40px;
+    padding: 32px 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-light);
+    background-color: var(--content-bg);
+    font-size: 0.9em;
+    margin-top: 60px;
 }
 
-.about-author{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    color: #111c23;
-    justify-content: center;
-    justify-items: center;
+.about-author {
+    font-family: var(--font-body);
+    font-size: 1.05em;
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-author h4 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.about-author p {
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.about-author button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.about-author button:hover {
+    background: var(--primary-light);
+    box-shadow: var(--shadow-hover);
 }
 
 /* 9. Basic Responsiveness (Crucial for a Real Site) */
-@media (max-width: 800px) {
-    /* Stack the content and sidebar vertically on small screens */
+@media (max-width: 900px) {
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .site-header nav a {
+        margin-left: 16px;
+        font-size: 14px;
+    }
+
     .content-container {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 32px;
+        margin: 40px auto;
+    }
+
+    .sidebar {
+        position: static;
+        top: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .site-header h1 a {
+        font-size: 1.3em;
+    }
+
+    .site-header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .site-header nav a {
+        margin-left: 0;
+        font-size: 13px;
+        padding: 4px 0;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .content-container {
+        padding: 0 16px;
+        gap: 24px;
+    }
+
+    .post-list h2 {
+        font-size: 1.6em;
+        margin-bottom: 24px;
+    }
+
+    .blog-post-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .blog-post-card h3 {
+        font-size: 1.2em;
+    }
+
+    .full-article {
+        padding: 20px;
+    }
+
+    .full-article h2 {
+        font-size: 1.5em;
+    }
+
+    .full-article h3 {
+        font-size: 1.2em;
+    }
+
+    .article-body {
+        font-size: 1em;
+    }
+
+    .about-author {
+        padding: 20px 16px;
+    }
+
+    .about-author h4 {
+        font-size: 1.5em;
     }
 }
