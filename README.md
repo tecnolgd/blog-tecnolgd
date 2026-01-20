@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/tools-Open_Source-blue)
+![Static Badge](https://img.shields.io/badge/made_with-HTML_CSS-blue)
 ![Static Badge](https://img.shields.io/badge/interface-web-teal)
 ![Static Badge](https://img.shields.io/badge/version-v1.0.0-red)
 ![Travis (.com)](https://img.shields.io/travis/com/tecnolgd/blog-tecnlogd-cpp)
@@ -96,4 +96,5 @@ The main layout uses CSS Grid for the two-column structure (Section 4 in style.c
 ## Credits
 Author: ***tecnolgd***
 Built with: Boring HTML and CSS with ambition to control every damn pixel 💀.
+
 
