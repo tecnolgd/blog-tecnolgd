@@ -7,18 +7,17 @@
 ### Project Name: blog-tecnolgd
 ### Status: Production Ready (v1.1.0)
 
-This project is a **minimalist, high-performance blog template** built entirely from scratch using **only HTML and CSS**. It was created to demonstrate complete control over the front-end design, prioritizing speed, readability, and a unique signature aesthetic.
+This project is a **minimalist, high-performance blog template** built entirely from scratch using **only HTML and CSS**. It was created to demonstrate complete control over the front-end design, prioritizing content, readability, and clean simplicity for technical blogs.
 
 ## Signature Features
 
-* **Zero Custom JavaScript:** No frameworks (Bootstrap, Tailwind, etc.), custom JavaScript, or preprocessors. Pure, hand-written HTML and CSS.
-* **Blazing Fast:** Designed for minimal file sizes and immediate rendering, resulting in excellent performance.
-* **Modern & Sleek Design:** Refined typography, smooth animations, and elegant color palette for a premium feel.
-* **Email Subscription System:** Built-in newsletter CTAs on every page to grow your audience (integrates with Formspree).
-* **Responsive Layout:** Fully optimized for mobile, tablet, and desktop screens using native CSS Grid and Flexbox.
-* **Signature Aesthetic:** Features a distinct color palette and typography (defined in `style.css` variables) to provide a truly unique look.
-* **Semantic Structure:** Uses modern HTML5 tags (`<header>`, `<main>`, `<article>`, `<aside>`, `<footer>`) for excellent accessibility and SEO.
-* **Smooth Interactions:** Subtle hover effects and transitions for a polished user experience.
+* **Zero Fluff:** No frameworks, custom JavaScript, or bloated styling. Pure HTML and CSS.
+* **Blazing Fast:** Minimal file sizes and immediate rendering for excellent performance.
+* **Content-First Design:** Clean typography and layout that keeps focus on your writing, not flashy effects.
+* **Responsive Layout:** Works perfectly on mobile, tablet, and desktop using CSS Grid and Flexbox.
+* **Subtle Interactions:** Minimal, functional hover effects and transitions—professional, not distracting.
+* **Semantic Structure:** Uses modern HTML5 semantics for excellent accessibility and SEO.
+* **Easy Integration:** Simple email subscription forms (Formspree) for building an audience without complexity.
 
 ## Getting Started
 This repository consists of simple static files. To run it, you just need a web browser.
@@ -55,46 +54,40 @@ The repository contains the following core files:
 
 ## Newsletter Integration
 
-The blog includes multiple subscription points to help you grow your audience:
+The blog includes optional email subscription forms to help you build an audience:
 
-- **Homepage banner:** Prominent gradient CTA above recent articles
-- **Sidebar newsletter box:** Visible on every page for easy signups
-- **Post-article CTA:** Conversion box at the end of articles
-- **About page form:** Connect with readers on the about section
-- **Updates page banner:** Notify subscribers of new projects
+- **Sidebar newsletter box:** Quiet subscription option on every page
+- **Post-article section:** Low-key signup after reading
+- **About page:** Simple email capture form
 
-All forms are connected to **Formspree** (a free service that handles email collection with no JavaScript required).
+All forms use **Formspree** (free, no JavaScript required). This is optional—remove if you prefer no email collection.
 
-### Setup Email Capture
+### Setup Email Capture (Optional)
 
 1. Go to [formspree.io](https://formspree.io) and create a free account
 2. Create a new form for your email signups
 3. Copy your form ID (e.g., `xyzabc123`)
-4. Replace `your-form-id` in all HTML files with your actual Formspree ID
+4. Replace `your-form-id` in HTML files: `action="https://formspree.io/f/xyzabc123"`
 
-Example in `form action`:
-```html
-<form class="newsletter-form" action="https://formspree.io/f/xyzabc123" method="POST">
-```
+To remove email forms entirely, just delete the newsletter boxes from the HTML.
 
 ---
 Your signature is defined by the contents of **`style.css`**.
 
 ### 1. Color Scheme
 
-Open `style.css` and modify the CSS variables near the top to instantly change the site's look:
+Open `style.css` and modify the CSS variables at the top:
 
 ```css
-/* 1. CSS Variables for Easy Customization */
 :root {
     --primary-color: #2f7276;        /* Main accent color */
-    --primary-light: #5cb3b8;        /* Lighter primary for hover states */
-    --text-color: #2b2c2d;           /* Main text color */
-    --text-light: #666666;           /* Lighter text for meta info */
+    --primary-light: #5cb3b8;        /* Hover state */
+    --text-color: #2b2c2d;           /* Main text */
+    --text-light: #666666;           /* Secondary text */
     --background-color: #f8fafb;     /* Page background */
-    --content-bg: #e2e9e9;           /* Card/content background */
-    --border-color: #d0d6d6;         /* Subtle borders */
-    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    --content-bg: #e2e9e9;           /* Card background */
+    --border-color: #d0d6d6;         /* Borders */
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
     --font-heading: 'Georgia', 'Garamond', serif;
 }
 ```
