@@ -32,6 +32,16 @@
 
     <main class="content-container">
         <section class="post-list">
+            <div class="newsletter-banner">
+                <h3>📬 Never Miss an Article</h3>
+                <p>Get the latest tech insights delivered to your inbox</p>
+                <form class="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+            </div>
+            
             <h2>Recent Articles</h2>
             <article class="blog-post-card">
                 <h3><a href="#2">2. Minimalist Blogging websites using HTML and CSS</a></h3>
@@ -50,20 +60,47 @@
             </section>
         
         <aside class="sidebar">
+            <div class="newsletter-box">
+                <h4> Join Our Community</h4>
+                <p>Get weekly articles on tech, design & web development</p>
+                <form class="sidebar-newsletter" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <button type="submit">Join</button>
+                </form>
+                <p class="subscribe-note">Unsubscribe anytime</p>
+            </div>
             
             <div class="categories">
-                <h4>Categories</h4>
+                <h4> Categories</h4>
                 <ul>
                     <li><a href="#">Intro (1)</a></li>
                     <li><a href="#">Design (1)</a></li>
-                    
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <h4> Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="update.html">Latest Updates</a></li>
                 </ul>
             </div>
         </aside>
     </main>
 
+    <div class="cta-section">
+        <h3>Ready to level up your web skills?</h3>
+        <p>Subscribe to get articles on minimalist design, HTML/CSS, and web performance</p>
+        <button type="button" class="cta-button" onclick="setTimeout(() => alert('Enter your email in the newsletter box above!'), 100)">Get Started</button>
+    </div>
+
     <footer class="site-footer">
         <p>&copy; 2025 tecnolgd. Built with HTML/CSS Control 💀.</p>
+        <div class="footer-links">
+            <a href="about.html">About</a> | 
+            <a href="#">RSS</a> | 
+            <a href="#">Twitter</a>
+        </div>
     </footer>
 </body>
 </html>
