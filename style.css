@@ -100,25 +100,24 @@ body {
 
 /* 5. Newsletter Banner Styling */
 .newsletter-banner {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    color: white;
-    padding: 32px;
+    background: var(--content-bg);
+    border: 1px solid var(--border-color);
+    padding: 24px;
     border-radius: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     text-align: center;
-    box-shadow: var(--shadow-hover);
 }
 
 .newsletter-banner h3 {
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 .newsletter-banner p {
-    font-size: 1em;
-    margin-bottom: 20px;
-    opacity: 0.95;
+    font-size: 0.95em;
+    margin-bottom: 16px;
+    color: var(--text-light);
 }
 
 .newsletter-form {
@@ -130,34 +129,33 @@ body {
 }
 
 .newsletter-form input {
-    padding: 12px 16px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.95em;
+    min-width: 200px;
     font-family: var(--font-body);
 }
 
 .newsletter-form button {
-    background: white;
-    color: var(--primary-color);
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-weight: 600;
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1em;
+    transition: background-color 0.2s ease;
+    font-size: 0.95em;
 }
 
 .newsletter-form button:hover {
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-2px);
+    background: var(--primary-light);
 }
 
 .newsletter-note {
-    font-size: 0.85em;
-    opacity: 0.8;
+    font-size: 0.8em;
+    color: var(--text-light);
 }
 
 /* 5.5 Post List Styling (Home Page) */
@@ -236,25 +234,25 @@ body {
 }
 /* 6. Sidebar Newsletter Box */
 .newsletter-box {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    padding: 20px;
+    background: var(--content-bg);
+    border: 1px solid var(--border-color);
+    padding: 16px;
     border-radius: 8px;
-    margin-bottom: 24px;
-    box-shadow: var(--shadow);
+    margin-bottom: 16px;
 }
 
 .newsletter-box h4 {
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
+    font-size: 1em;
 }
 
 .newsletter-box p {
     font-size: 0.9em;
     margin-bottom: 12px;
-    line-height: 1.5;
+    color: var(--text-light);
 }
 
 .sidebar-newsletter {
@@ -265,47 +263,47 @@ body {
 }
 
 .sidebar-newsletter input {
-    padding: 10px 12px;
-    border: none;
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 0.9em;
     font-family: var(--font-body);
 }
 
 .sidebar-newsletter button {
-    background: white;
-    color: #667eea;
-    border: none;
-    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 8px;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .sidebar-newsletter button:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow);
+    background: var(--primary-light);
 }
 
 .subscribe-note {
     font-size: 0.75em;
-    opacity: 0.8;
+    color: var(--text-light);
 }
 
 .quick-links {
     background: var(--content-bg);
-    padding: 16px;
+    padding: 12px;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .quick-links h4 {
-    color: var(--primary-color);
+    color: var(--text-color);
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 8px;
-    margin-bottom: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
 }
 
 .quick-links ul {
@@ -313,14 +311,14 @@ body {
 }
 
 .quick-links li {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .quick-links a {
     color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 0.95em;
+    transition: color 0.2s ease;
+    font-size: 0.9em;
 }
 
 .quick-links a:hover {
@@ -447,18 +445,18 @@ body {
 }
 
 .post-footer p {
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .post-nav {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .post-nav a {
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .post-nav a:hover {
@@ -467,25 +465,24 @@ body {
 
 /* Article CTA Box */
 .article-cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 32px;
-    margin: 48px 0;
+    background: var(--content-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin: 32px 0;
     border-radius: 8px;
     text-align: center;
-    box-shadow: var(--shadow-hover);
 }
 
 .article-cta h3 {
-    color: white;
-    font-size: 1.4em;
+    color: var(--text-color);
+    font-size: 1.2em;
     margin-bottom: 8px;
 }
 
 .article-cta p {
-    color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 20px;
-    font-size: 1em;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-size: 0.95em;
 }
 
 .article-cta-form {
@@ -497,34 +494,32 @@ body {
 }
 
 .article-cta-form input {
-    padding: 12px 16px;
-    border: none;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 0.95em;
     font-family: var(--font-body);
-    min-width: 250px;
+    min-width: 200px;
 }
 
 .article-cta-form button {
-    background: white;
-    color: #667eea;
-    border: none;
-    padding: 12px 24px;
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 10px 16px;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1em;
+    transition: background-color 0.2s ease;
 }
 
 .article-cta-form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background: var(--primary-light);
 }
 
 .cta-note {
-    font-size: 0.85em;
-    opacity: 0.85;
+    font-size: 0.8em;
+    color: var(--text-light);
 }
 
 /* Related Posts Box */
@@ -563,47 +558,7 @@ body {
     text-decoration: underline;
 }
 
-/* 7.5 CTA Section */
-.cta-section {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
-    padding: 48px 32px;
-    margin: 60px auto;
-    text-align: center;
-    border-radius: 8px;
-    max-width: 1000px;
-    box-shadow: var(--shadow-hover);
-}
-
-.cta-section h3 {
-    font-size: 1.8em;
-    margin-bottom: 12px;
-    font-weight: 600;
-}
-
-.cta-section p {
-    font-size: 1.1em;
-    margin-bottom: 24px;
-    opacity: 0.95;
-    line-height: 1.6;
-}
-
-.cta-button {
-    background: white;
-    color: #f5576c;
-    border: none;
-    padding: 14px 32px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 1.05em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
+/* 7.5 CTA Section - REMOVED */
 
 /* 8. Footer */
 .site-footer {
@@ -671,8 +626,8 @@ body {
 }
 
 .social-links {
-    margin: 24px 0;
-    padding: 20px;
+    margin: 16px 0;
+    padding: 12px;
     background: var(--content-bg);
     border-radius: 8px;
     border: 1px solid var(--border-color);
@@ -680,85 +635,84 @@ body {
 
 .social-links strong {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     color: var(--text-color);
+    font-weight: 600;
 }
 
 .social-icon {
     display: inline-block;
-    margin: 8px 12px 8px 0;
-    padding: 10px 16px;
+    margin: 4px 6px 4px 0;
+    padding: 6px 12px;
     background: var(--primary-color);
     color: white;
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
-    transition: all 0.3s ease;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
 }
 
 .social-icon:hover {
     background: var(--primary-light);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow);
 }
 
 .newsletter-signup-about {
-    margin: 32px 0;
-    padding: 28px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 24px 0;
+    padding: 16px;
+    background: var(--content-bg);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    color: white;
     text-align: center;
 }
 
 .newsletter-signup-about h3 {
-    color: white;
-    font-size: 1.4em;
+    color: var(--text-color);
+    font-size: 1.1em;
     margin-bottom: 8px;
 }
 
 .newsletter-signup-about p {
-    color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 16px;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    font-size: 0.9em;
 }
 
 .about-newsletter-form {
     display: flex;
     gap: 8px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .about-newsletter-form input {
-    padding: 12px 16px;
-    border: none;
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: var(--font-body);
-    min-width: 250px;
+    min-width: 180px;
 }
 
 .about-newsletter-form button {
-    background: white;
-    color: #667eea;
-    border: none;
-    padding: 12px 24px;
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 8px 14px;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1em;
+    transition: background-color 0.2s ease;
 }
 
 .about-newsletter-form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background: var(--primary-light);
 }
 
 .small-note {
-    font-size: 0.85em;
-    opacity: 0.85;
+    font-size: 0.75em;
+    color: var(--text-light);
 }
 
 /* 9. Basic Responsiveness (Crucial for a Real Site) */
@@ -769,11 +723,6 @@ body {
 
     .newsletter-form input {
         min-width: 100%;
-    }
-
-    .cta-section {
-        margin: 40px 20px;
-        padding: 32px 20px;
     }
 
     .header-container {
@@ -799,11 +748,11 @@ body {
 
 @media (max-width: 640px) {
     .newsletter-banner {
-        padding: 20px 16px;
+        padding: 16px 12px;
     }
 
     .newsletter-banner h3 {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .newsletter-form {
@@ -812,15 +761,6 @@ body {
 
     .newsletter-form input {
         min-width: 100%;
-    }
-
-    .cta-section {
-        margin: 30px 16px;
-        padding: 24px 16px;
-    }
-
-    .cta-section h3 {
-        font-size: 1.3em;
     }
 
     .site-header {
