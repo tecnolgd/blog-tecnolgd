@@ -31,6 +31,16 @@
     <body>
         <main class="content-container">
         <section class="post-list">
+            <div class="newsletter-banner">
+                <h3> Latest Project Updates</h3>
+                <p>Get notified when new projects are released</p>
+                <form class="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+            </div>
+            
             <article class="blog-post-card">
                 <h3>Python project-1 release</h3>
                 <p class="post-meta">Published by tecnolgd on Feb 04, 2026 | <span id="articleCat">Projects</span></p>
@@ -75,14 +85,41 @@
             
         </section>
         <aside class="sidebar">
+            <div class="newsletter-box">
+                <h4> Stay Updated</h4>
+                <p>Get alerts on new project releases and updates</p>
+                <form class="sidebar-newsletter" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <button type="submit">Join</button>
+                </form>
+                <p class="subscribe-note">Unsubscribe anytime</p>
+            </div>
             
             <div class="categories">
-                <h4>Categories</h4>
+                <h4> Categories</h4>
                 <ul>
-                    <li><a href="#">Projects(7)</a></li>
-                    
+                    <li><a href="#">Projects (7)</a></li>
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <h4> Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Blog Posts</a></li>
+                    <li><a href="about.html">About Me</a></li>
                 </ul>
             </div>
         </aside>
         </main>
     </body>
+    <footer class="site-footer">
+        <p>&copy; 2025 tecnolgd. Built with HTML/CSS Control 💀.</p>
+        <div class="footer-links">
+            <a href="index.html">Posts</a> | 
+            <a href="update.html">Updates</a> | 
+            <a href="about.html">About</a>
+        </div>
+    </footer>
+
+</body>
+</html>
