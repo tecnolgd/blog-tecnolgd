@@ -98,7 +98,69 @@ body {
     gap: 48px;
 }
 
-/* 5. Post List Styling (Home Page) */
+/* 5. Newsletter Banner Styling */
+.newsletter-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: var(--shadow-hover);
+}
+
+.newsletter-banner h3 {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.newsletter-banner p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    min-width: 250px;
+    font-family: var(--font-body);
+}
+
+.newsletter-form button {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.newsletter-form button:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+.newsletter-note {
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+/* 5.5 Post List Styling (Home Page) */
 .post-list h2 {
     font-size: 2.2em;
     margin-bottom: 32px;
@@ -172,7 +234,101 @@ body {
     font-weight: 500;
     color: var(--primary-color);
 }
-/* 6. Sidebar Styling */
+/* 6. Sidebar Newsletter Box */
+.newsletter-box {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+}
+
+.newsletter-box h4 {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.newsletter-box p {
+    font-size: 0.9em;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.sidebar-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.sidebar-newsletter input {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: var(--font-body);
+}
+
+.sidebar-newsletter button {
+    background: white;
+    color: #667eea;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar-newsletter button:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow);
+}
+
+.subscribe-note {
+    font-size: 0.75em;
+    opacity: 0.8;
+}
+
+.quick-links {
+    background: var(--content-bg);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-top: 16px;
+}
+
+.quick-links h4 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links li {
+    margin-bottom: 6px;
+}
+
+.quick-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95em;
+}
+
+.quick-links a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
+/* 6.5 Sidebar Styling */
 .categories {
     font-family: var(--font-body);
     color: var(--text-color);
@@ -290,6 +446,165 @@ body {
     color: var(--primary-light);
 }
 
+.post-footer p {
+    margin-top: 16px;
+}
+
+.post-nav {
+    margin-bottom: 16px;
+}
+
+.post-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.post-nav a:hover {
+    color: var(--primary-light);
+}
+
+/* Article CTA Box */
+.article-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 32px;
+    margin: 48px 0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow-hover);
+}
+
+.article-cta h3 {
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.article-cta p {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.article-cta-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-cta-form input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: var(--font-body);
+    min-width: 250px;
+}
+
+.article-cta-form button {
+    background: white;
+    color: #667eea;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.article-cta-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cta-note {
+    font-size: 0.85em;
+    opacity: 0.85;
+}
+
+/* Related Posts Box */
+.related-posts {
+    background: var(--content-bg);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-top: 16px;
+}
+
+.related-posts h4 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.related-posts ul {
+    list-style: none;
+}
+
+.related-posts li {
+    margin-bottom: 8px;
+}
+
+.related-posts a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95em;
+}
+
+.related-posts a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
+/* 7.5 CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 48px 32px;
+    margin: 60px auto;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 1000px;
+    box-shadow: var(--shadow-hover);
+}
+
+.cta-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    margin-bottom: 24px;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background: white;
+    color: #f5576c;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
 /* 8. Footer */
 .site-footer {
     text-align: center;
@@ -299,6 +614,21 @@ body {
     background-color: var(--content-bg);
     font-size: 0.9em;
     margin-top: 60px;
+}
+
+.footer-links {
+    margin-top: 12px;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
 }
 
 .about-author {
@@ -340,8 +670,112 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
+.social-links {
+    margin: 24px 0;
+    padding: 20px;
+    background: var(--content-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.social-links strong {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 8px 12px 8px 0;
+    padding: 10px 16px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.newsletter-signup-about {
+    margin: 32px 0;
+    padding: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.newsletter-signup-about h3 {
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.newsletter-signup-about p {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 16px;
+}
+
+.about-newsletter-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-newsletter-form input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: var(--font-body);
+    min-width: 250px;
+}
+
+.about-newsletter-form button {
+    background: white;
+    color: #667eea;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.about-newsletter-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.small-note {
+    font-size: 0.85em;
+    opacity: 0.85;
+}
+
 /* 9. Basic Responsiveness (Crucial for a Real Site) */
 @media (max-width: 900px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        min-width: 100%;
+    }
+
+    .cta-section {
+        margin: 40px 20px;
+        padding: 32px 20px;
+    }
+
     .header-container {
         padding: 0 16px;
     }
@@ -364,6 +798,31 @@ body {
 }
 
 @media (max-width: 640px) {
+    .newsletter-banner {
+        padding: 20px 16px;
+    }
+
+    .newsletter-banner h3 {
+        font-size: 1.3em;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        min-width: 100%;
+    }
+
+    .cta-section {
+        margin: 30px 16px;
+        padding: 24px 16px;
+    }
+
+    .cta-section h3 {
+        font-size: 1.3em;
+    }
+
     .site-header {
         padding: 12px 0;
     }
