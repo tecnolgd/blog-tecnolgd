@@ -13,11 +13,11 @@ This project is a **minimalist, high-performance blog template** built entirely 
 
 * **Zero Fluff:** No frameworks, custom JavaScript, or bloated styling. Pure HTML and CSS.
 * **Blazing Fast:** Minimal file sizes and immediate rendering for excellent performance.
-* **Content-First Design:** Clean typography and layout that keeps focus on your writing, not flashy effects.
-* **Responsive Layout:** Works perfectly on mobile, tablet, and desktop using CSS Grid and Flexbox.
-* **Subtle Interactions:** Minimal, functional hover effects and transitions—professional, not distracting.
-* **Semantic Structure:** Uses modern HTML5 semantics for excellent accessibility and SEO.
-* **Easy Integration:** Simple email subscription forms (Formspree) for building an audience without complexity.
+* **Technical Aesthetic:** Clean, dark typography focused on content—not flashy effects.
+* **Responsive Layout:** Works flawlessly on mobile, tablet, and desktop using CSS Grid and Flexbox.
+* **Minimal Interactions:** Snappy, functional hover effects—professional and direct.
+* **Semantic Structure:** Modern HTML5 semantics for excellent accessibility and SEO.
+* **Easy Integration:** Optional email subscription (Formspree) for growing your audience without bloat.
 
 ## Getting Started
 This repository consists of simple static files. To run it, you just need a web browser.
@@ -80,15 +80,13 @@ Open `style.css` and modify the CSS variables at the top:
 
 ```css
 :root {
-    --primary-color: #2f7276;        /* Main accent color */
-    --primary-light: #5cb3b8;        /* Hover state */
-    --text-color: #2b2c2d;           /* Main text */
-    --text-light: #666666;           /* Secondary text */
-    --background-color: #f8fafb;     /* Page background */
-    --content-bg: #e2e9e9;           /* Card background */
-    --border-color: #d0d6d6;         /* Borders */
-    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-    --font-heading: 'Georgia', 'Garamond', serif;
+    --primary-color: #1a1a1a;        /* Primary accent (dark) */
+    --primary-light: #404040;        /* Hover state */
+    --text-color: #0a0a0a;           /* Main text (near-black) */
+    --text-light: #5a5a5a;           /* Secondary text */
+    --background-color: #fafafa;     /* Page background (light) */
+    --content-bg: #ffffff;           /* Card backgrounds */
+    --border-color: #e5e5e5;         /* Subtle borders */
 }
 ```
 
