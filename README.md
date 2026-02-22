@@ -11,9 +11,10 @@ This project is a **minimalist, high-performance blog template** built entirely 
 
 ## Signature Features
 
-* **Zero Dependencies:** No frameworks (Bootstrap, Tailwind, etc.), JavaScript, or preprocessors. Pure, hand-written(typed 💀) HTML and CSS.
-* **Blazing Fast:** Designed for minimal file sizes and immediate rendering, resulting in perfect Lighthouse scores.
+* **Zero Custom JavaScript:** No frameworks (Bootstrap, Tailwind, etc.), custom JavaScript, or preprocessors. Pure, hand-written HTML and CSS.
+* **Blazing Fast:** Designed for minimal file sizes and immediate rendering, resulting in excellent performance.
 * **Modern & Sleek Design:** Refined typography, smooth animations, and elegant color palette for a premium feel.
+* **Email Subscription System:** Built-in newsletter CTAs on every page to grow your audience (integrates with Formspree).
 * **Responsive Layout:** Fully optimized for mobile, tablet, and desktop screens using native CSS Grid and Flexbox.
 * **Signature Aesthetic:** Features a distinct color palette and typography (defined in `style.css` variables) to provide a truly unique look.
 * **Semantic Structure:** Uses modern HTML5 tags (`<header>`, `<main>`, `<article>`, `<aside>`, `<footer>`) for excellent accessibility and SEO.
@@ -44,15 +45,39 @@ The repository contains the following core files:
 
 | File Name | Purpose |
 | :--- | :--- |
-| **`index.html`** | The main blog landing page, listing recent articles. |
-| **`post.html`** | The template for viewing a single, full article (the main content). |
+| **`index.html`** | The main blog landing page listing recent articles with newsletter subscription banner. |
+| **`post.html`** | Template for viewing a single full article with email subscription CTA. |
+| **`about.html`** | About page with author bio and newsletter signup form. |
+| **`update.html`** | Projects/updates page with subscription options. |
 | **`style.css`** | The complete, hand-written stylesheet for the entire site. **(Customization starts here!)** |
-| `update.html` | (Optional: Add your updates page here.) |
-| `about.html` | (Optional: Add your About page template here.) |
 
 ---
 
-## Customization Guide
+## Newsletter Integration
+
+The blog includes multiple subscription points to help you grow your audience:
+
+- **Homepage banner:** Prominent gradient CTA above recent articles
+- **Sidebar newsletter box:** Visible on every page for easy signups
+- **Post-article CTA:** Conversion box at the end of articles
+- **About page form:** Connect with readers on the about section
+- **Updates page banner:** Notify subscribers of new projects
+
+All forms are connected to **Formspree** (a free service that handles email collection with no JavaScript required).
+
+### Setup Email Capture
+
+1. Go to [formspree.io](https://formspree.io) and create a free account
+2. Create a new form for your email signups
+3. Copy your form ID (e.g., `xyzabc123`)
+4. Replace `your-form-id` in all HTML files with your actual Formspree ID
+
+Example in `form action`:
+```html
+<form class="newsletter-form" action="https://formspree.io/f/xyzabc123" method="POST">
+```
+
+---
 Your signature is defined by the contents of **`style.css`**.
 
 ### 1. Color Scheme
@@ -62,14 +87,14 @@ Open `style.css` and modify the CSS variables near the top to instantly change t
 ```css
 /* 1. CSS Variables for Easy Customization */
 :root {
-    --primary-color: #2c5aa0;        /* Main accent color */
-    --primary-light: #4a7ec0;        /* Lighter primary for hover states */
-    --text-color: #1a1a1a;           /* Main text color */
+    --primary-color: #2f7276;        /* Main accent color */
+    --primary-light: #5cb3b8;        /* Lighter primary for hover states */
+    --text-color: #2b2c2d;           /* Main text color */
     --text-light: #666666;           /* Lighter text for meta info */
     --background-color: #f8fafb;     /* Page background */
-    --content-bg: #ffffff;           /* Card/content background */
-    --border-color: #e0e0e0;         /* Subtle borders */
-    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    --content-bg: #e2e9e9;           /* Card/content background */
+    --border-color: #d0d6d6;         /* Subtle borders */
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     --font-heading: 'Georgia', 'Garamond', serif;
 }
 ```
