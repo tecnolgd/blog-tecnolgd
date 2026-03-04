@@ -1,13 +1,14 @@
+
+# In the Shadows 
+
 ![Static Badge](https://img.shields.io/badge/made_with-HTML_CSS-blue)
 ![Static Badge](https://img.shields.io/badge/interface-web-teal)
 ![Static Badge](https://img.shields.io/badge/version-v1.0.0-red)
 
-# In the Shadows 
-
 ### Project Name: blog-tecnolgd
-### Status: Production Ready (v1.1.0)
+### Status: v1.1.0
 
-This project is a **minimalist, high-performance blog template** built entirely from scratch using **only HTML and CSS**. It was created to demonstrate complete control over the front-end design, prioritizing content, readability, and clean simplicity for technical blogs.
+This project is a **minimalist, high-performance blog website** built using **only HTML and CSS**. It was created to demonstrate complete control over the front-end design, prioritizing content, readability, and clean simplicity for technical blogs.
 
 ## Signature Features
 
@@ -17,7 +18,7 @@ This project is a **minimalist, high-performance blog template** built entirely 
 * **Responsive Layout:** Works flawlessly on mobile, tablet, and desktop using CSS Grid and Flexbox.
 * **Minimal Interactions:** Snappy, functional hover effects—professional and direct.
 * **Semantic Structure:** Modern HTML5 semantics for excellent accessibility and SEO.
-* **Easy Integration:** Optional email subscription (Formspree) for growing your audience without bloat.
+* **Easy Integration:** Optional email subscription (Formspree) for growing your audience without bloat.(Currently in beta)
 
 ## Getting Started
 This repository consists of simple static files. To run it, you just need a web browser.
@@ -70,15 +71,15 @@ All forms use **Formspree** (free, no JavaScript required). This is optional—r
 4. Replace `your-form-id` in HTML files: `action="https://formspree.io/f/xyzabc123"`
 
 To remove email forms entirely, just delete the newsletter boxes from the HTML.
-
----
 Your signature is defined by the contents of **`style.css`**.
 
 ### 1. Color Scheme
 
 Open `style.css` and modify the CSS variables at the top:
 
-```css
+```css 
+/*Current color scheme of the website*/
+
 :root {
     --primary-color: #1a1a1a;        /* Primary accent (dark) */
     --primary-light: #404040;        /* Hover state */
