@@ -32,8 +32,9 @@ This repository consists of simple static files. To run it, you just need a web 
 1.  **Clone the Repository:**
     ```bash
     git clone https://github.com/tecnolgd/blog-tecnolgd
-
-    cd blogLgd #to open the folder
+    ```
+    ```bash
+    cd blogLgd #to open the folder via terminal
     ```
 
 2.  **Open the Template:**
@@ -70,7 +71,7 @@ All forms use **Formspree** (free, no JavaScript required). This is optional—r
 3. Copy your form ID (e.g., `xyzabc123`)
 4. Replace `your-form-id` in HTML files: `action="https://formspree.io/f/xyzabc123"`
 
-To remove email forms entirely, just delete the newsletter boxes from the HTML.
+To remove email forms entirely, just delete the newsletter boxes from the HTML.   
 Your signature is defined by the contents of **`style.css`**.
 
 ### 1. Color Scheme
@@ -112,6 +113,3 @@ The main layout uses CSS Grid for the two-column structure (Section 4 in style.c
 ## Credits
 Author: ***tecnolgd***
 Built with: Boring HTML and CSS with ambition to control every damn pixel 💀.
-
-
-
