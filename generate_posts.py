@@ -46,7 +46,7 @@ def generate_index_cards(posts):
     """Generate blog card HTML for index.html"""
     cards = []
     for post in reversed(posts):  # Newest first
-        card = f'''            <a href="post-{post['id']}.html" class="post-card">
+        card = f'''            <a href="posts/post-{post['id']}.html" class="post-card">
                 <h3>{post['title']}</h3>
                 <p class="post-summary">{post['summary']}</p>
                 <p class="post-meta">{post['date']} | <span class="category">{post['category']}</span></p>
@@ -77,11 +77,11 @@ def update_index(cards_html):
             f.write(new_index)
         print("✓ Updated index.html with all posts")
     else:
-        print("⚠ Warning: Could not find <!-- POSTS START --> and <!-- POSTS END --> in index.html")
+        print("Warning: Could not find <!-- POSTS START --> and <!-- POSTS END --> in index.html")
         print("  Add these markers to your index.html where you want posts injected")
 
 def main():
-    print("=== Minimalist Blog Post Generator ===\n")
+    print("** Post Generation Report **");
     posts = load_posts()
     template = load_template()
     
@@ -105,7 +105,6 @@ def main():
     print(f"  - Created: {created} new posts")
     print(f"  - Skipped: {skipped} existing posts (immutable)")
     print(f"  - Total posts: {len(posts)}")
-    print(f"\n💡 Remember: Never edit old posts - write new ones instead!")
 
 if __name__ == '__main__':
     main()
