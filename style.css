@@ -10,7 +10,7 @@
     --shadow: 0 1px 3px rgba(18, 18, 18, 0.05);
     --shadow-hover: 0 3px 8px rgba(0, 0, 0, 0.1);
     --font-body: -apple-system, BlinkMacSystemFont,'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-    --font-heading: 'Georgia', 'Garamond', serif, Verdana;
+    --font-heading: 'Georgia', 'Garamond', 'serif', 'Verdana';
 }
 
 /* 2. Global Reset and Body Styling */
