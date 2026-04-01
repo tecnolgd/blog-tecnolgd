@@ -1,115 +1,74 @@
 
-# In the Shadows 
+# In the Shadows
 
-![Static Badge](https://img.shields.io/badge/made_with-HTML_CSS-blue)
-![Static Badge](https://img.shields.io/badge/interface-web-teal)
-![Static Badge](https://img.shields.io/badge/version-v1.0.0-red)
+A minimalist blog for devs who value content over frameworks.
 
-### Project Name: blog-tecnolgd
-### Status: v1.1.0
+## What This Is
 
-This project is a **minimalist, high-performance blog website** built using **only HTML and CSS**. It was created to demonstrate complete control over the front-end design, prioritizing content, readability, and clean simplicity for technical blogs.
+Pure HTML + CSS. No JavaScript, no frameworks, no bloat. Built to be:
+- **Fast** - Single-digit KB files
+- **Readable** - Content-focused design
+- **Portable** - Works anywhere, owned by you
+- **Maintainable** - One Python script to manage posts
+- **Free Hosting** - Hosted via GitHub Pages(The Repo needs to be public for free-tier accounts)
 
-## Signature Features
+## Quick Start
 
-* **Zero Fluff:** No frameworks, custom JavaScript, or bloated styling. Pure HTML and CSS.
-* **Blazing Fast:** Minimal file sizes and immediate rendering for excellent performance.
-* **Technical Aesthetic:** Clean, dark typography focused on content—not flashy effects.
-* **Responsive Layout:** Works flawlessly on mobile, tablet, and desktop using CSS Grid and Flexbox.
-* **Minimal Interactions:** Snappy, functional hover effects—professional and direct.
-* **Semantic Structure:** Modern HTML5 semantics for excellent accessibility and SEO.
-* **Easy Integration:** Optional email subscription (Formspree) for growing your audience without bloat.(Currently in beta)
-
-## Getting Started
-This repository consists of simple static files. To run it, you just need a web browser.
-
-### Prerequisites
-* A modern web browser (Chrome, Firefox, Safari, Edge).
-* A code editor (VS Code, Sublime Text, etc.).
-
-### Installation
-
-1.  **Clone the Repository:**
-    ```bash
+1. Clone the Repo:
+```bash
     git clone https://github.com/tecnolgd/blog-tecnolgd
-    ```
-    ```bash
-    cd blogLgd #to open the folder via terminal
-    ```
-
-2.  **Open the Template:**
-    * To view the website: Double-click **`index.html`** in your file explorer.
-    * And same tip applies for the other `.html` files.
-
-### Template Files
-The repository contains the following core files:
-
-| File Name | Purpose |
-| :--- | :--- |
-| **`index.html`** | The main blog landing page listing recent articles with newsletter subscription banner. |
-| **`post.html`** | Template for viewing a single full article with email subscription CTA. |
-| **`about.html`** | About page with author bio and newsletter signup form. |
-| **`update.html`** | Projects/updates page with subscription options. |
-| **`style.css`** | The complete, hand-written stylesheet for the entire site. **(Customization starts here!)** |
-
----
-
-## Newsletter Integration
-
-The blog includes optional email subscription forms to help you build an audience:
-
-- **Sidebar newsletter box:** Quiet subscription option on every page
-- **Post-article section:** Low-key signup after reading
-- **About page:** Simple email capture form
-
-All forms use **Formspree** (free, no JavaScript required). This is optional—remove if you prefer no email collection.
-
-### Setup Email Capture (Optional)
-
-1. Go to [formspree.io](https://formspree.io) and create a free account
-2. Create a new form for your email signups
-3. Copy your form ID (e.g., `xyzabc123`)
-4. Replace `your-form-id` in HTML files: `action="https://formspree.io/f/xyzabc123"`
-
-To remove email forms entirely, just delete the newsletter boxes from the HTML.   
-Your signature is defined by the contents of **`style.css`**.
-
-### 1. Color Scheme
-
-Open `style.css` and modify the CSS variables at the top:
-
-```css 
-/*Current color scheme of the website*/
-
-:root {
-    --primary-color: #1a1a1a;        /* Primary accent (dark) */
-    --primary-light: #404040;        /* Hover state */
-    --text-color: #0a0a0a;           /* Main text (near-black) */
-    --text-light: #5a5a5a;           /* Secondary text */
-    --background-color: #fafafa;     /* Page background (light) */
-    --content-bg: #ffffff;           /* Card backgrounds */
-    --border-color: #e5e5e5;         /* Subtle borders */
-}
+```
+2. Navigate to the project directory
+```bash
+cd blog-tecnolgd
 ```
 
-### 2. Typography
-Customize fonts by changing the `--font-body` and `--font-heading` variables. The default uses system fonts for speed and a classic serif heading font for elegance.
+**View locally:** Open `index.html` in any browser.
 
-### 3. Layout (Content vs. Sidebar)
-The main layout uses CSS Grid for the two-column structure (Section 4 in style.css):
+**Add a new post:**
 
-```css
-.content-container {
-    grid-template-columns: 2.5fr 1fr;  /* 2.5 parts Content, 1 part Sidebar */
-    /* Adjust these fractions to change the width balance. */
-    gap: 48px;
-}
+1. Edit `posts_data.json` - Add your post object
+2. Run: `python3 generate_posts.py`
+3. Commit the new `post-X.html` file
+
+Done. Script handles everything else (template injection, index updates).
+
+## Project Structure
+
+```
+index.html          - Home page (post feed, categories, newsletter)
+post-*.html         - Individual post pages (generated)
+posts/              - Legacy posts (deprecated, clean up as needed)
+posts_data.json     - Single source of truth for all posts
+post_template.html  - HTML skeleton for post generation
+generate_posts.py   - Automation (only generates missing files)
+style.css           - All styling (color, layout, typography)
+about.html          - About page
+projects.html       - Projects showcase
 ```
 
-## Value this repo ?
-* If this repository added value to your learning or dev flow ,consider dropping a *⭐*or hitting *fork*.
-* Open for recieving feedback and knowledge exchange.
+## How Posts Are Generated
 
-## Credits
-Author: ***tecnolgd***
-Built with: Boring HTML and CSS with ambition to control every damn pixel 💀.
+**posts_data.json** → **generate_posts.py** → **post-*.html**
+
+Post data lives in one file. Script is idempotent (safe to run multiple times).
+Only generates files that don't exist yet. Updates `index.html` with new posts.
+
+## Customization
+
+Edit `style.css` for colors, fonts, layout.
+
+Current palette:
+- **Background:** `#fafafa` (light)
+- **Text:** `#0a0a0a` (near-black)
+- **Accent:** `#1a1a1a` (dark)
+
+Everything else flows from these three.
+
+## Why This Approach
+
+- No git noise from regenerated files
+- Own your content (can run offline)
+- No vendor lock-in (SQL, frameworks, etc.)
+- Minimal moving parts = fewer bugs
+- HTML files are portable and timeless
