@@ -1,10 +1,11 @@
-#!/usr/bin/env python3
+# python script for generatingg new posts(.html file) using a template file (post_template.html) via a JSON file(posts_data.json)
+# Implemented to automate post outline generation and using saved time for crafting content for the posts  
 """
 Minimalist Blog Post Generator
 - Only generates NEW post files (never overwrites existing ones - they're immutable)
 - Updates index.html with all posts
 - Safe to run multiple times (idempotent)
-- Philosophy: Old posts are permanent - write new ones instead of editing
+- Philosophy: Old posts are permanent - write new ones instead of editing (forces precision and discipline)
 """
 
 import json
@@ -81,7 +82,7 @@ def update_index(cards_html):
         print("  Add these markers to your index.html where you want posts injected")
 
 def main():
-    print("** Post Generation Report **");
+    print("Generating post...");
     posts = load_posts()
     template = load_template()
     
