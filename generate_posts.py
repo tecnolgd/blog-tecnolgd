@@ -33,7 +33,11 @@ def generate_post_html(post, template):
 
 def generate_or_skip_post(post, html):
     """Create post file only if it doesn't exist (immutable)"""
-    filename = f"post-{post['id']}.html"
+    # Ensure posts directory exists
+    if not os.path.exists('posts'):
+        os.makedirs('posts')
+    
+    filename = f"posts/post-{post['id']}.html"
     if os.path.exists(filename):
         print(f"⊘ Skipping post-{post['id']}.html (immutable - already exists)")
         return False
