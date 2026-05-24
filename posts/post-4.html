@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades - In the Shadows</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MTFY6YB7C4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MTFY6YB7C4');
+</script>
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1><a href="../index.html">In the Shadows</a></h1>
+            <nav>
+                <a href="../index.html">Blog</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <section class="post-content">
+            <h1>Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades</h1>
+            <p class="post-meta">Published by tecnolgd on May 24, 2026 | <span id="articleCat">Tools</span></p>
+            
+            ### The Submission
+
+I recently competed in the HackerRank Orchestrate Hackathon (May 2026). The task was to build a system to triage and route technical support tickets across three datasets: HackerRank, Claude, and Visa.
+
+While the code worked well enough to hit a high evaluation score within the 24-hour limit, the implementation was a typical hackathon MVP: a generic Python/ChromaDB retrieval pipeline that handled all incoming queries uniformly without domain-specific routing optimizations.
+
+### Creating the v0.1.0-beta Baseline
+
+Instead of letting the code sit as a messy contest folder, I cleaned up the project environment to establish an immutable baseline under a `v0.1.0-beta` release tag. 
+
+* **Clutter Removal:** I deleted the generic competition templates (`problem_statement.md`, `CLAUDE.md`, `AGENTS.md`) that don't add value to a standalone project.
+* **Data Isolation:** Kept the sample datasets inside the local directory so the pipeline remains fully functional and testable.
+* **Execution Logs:** Retained the unedited runtime trace log (`log.txt`) and final submission files as a snapshot of how the ChromaDB queries and triage loops behaved during the final evaluation run.
+
+This frozen release marks the baseline for my initial working prototype.
+
+### The Upgrade Path: Optimizing the System
+
+With the baseline safely tagged, the focus shifts to stripping out the remaining clutter on the main branch and optimizing the existing solution. Instead of leaving it as a generic wrapper, the plan is to clean up the logic and introduce low-level engineering optimizations.
+
+The upcoming updates will focus on:
+1. **Pipeline Refactoring:** Cleaning up the folder structure, removing unwanted templates, and optimizing the ingestion flow without breaking the underlying core logic.
+2. **Domain Separation:** Transitioning from a completely uniform pipeline to a cleaner architecture that respects data boundaries between the three different knowledge bases.
+3. **Performance Profiling:** Analyzing where the Python/ChromaDB boundary hits bottlenecks during high-throughput ticket batching to prepare for targeted systems-level optimizations.
+
+The v0.1.0-beta code is officially locked down as the historic starting point.
+
+            <hr>
+            <p class="post-footer"><a href="../index.html">← Back to all posts</a></p>
+        </section>
+        
+        <aside class="sidebar">
+            <div class="quick-links">
+                <h4> Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Back to Posts</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 tecnolgd. Built with HTML & CSS.</p>
+        <div class="footer-links">
+            <a href="../index.html">Blog</a> | 
+            <a href="../projects.html">Projects</a> | 
+            <a href="../about.html">About</a> | 
+        </div>
+    </footer>
+</body>
+</html>
