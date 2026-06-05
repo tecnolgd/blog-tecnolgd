@@ -1,4 +1,3 @@
-
 # In the Shadows
 
 A minimalist blog template for devs who value content over frameworks.
@@ -81,5 +80,4 @@ Everything else flows from these three.
 
 **Pro Tips:**      
 > Make sure to write the post with enough planning to avoid this editing mess. For casual posts or updates which may need/undergo multiple changes, it's recommended to use `projects.html` file.         
-
 > Use simple indexing(e.g., "#1" for post-1 of topic 'X' and so on) for subsequent posts regarding the same topic or domain for a clear flow of posts for improved readability.  
