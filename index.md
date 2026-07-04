@@ -16,10 +16,11 @@
 
 
 ### Technical Posts
-<!--all technical or arch breakdowns go here-->
 
-
-
+- [Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades](posts/post-4.md)
+- [How I built a High Performance cache implementation](posts/post-3.md)
+- [Minimalist Blogging websites using HTML and CSS](posts/post-2.md)
+- [First post](posts/post-1.md)
 
 ### About Me
 
