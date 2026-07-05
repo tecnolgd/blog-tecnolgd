@@ -16,7 +16,6 @@
 <!-- all project updates go here, shortform content-->
 
 
-
 ### Technical Posts
 
 - [Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades](posts/post-4.md)
@@ -29,8 +28,9 @@
 I build low-level developer utilities, high-performance systems, and custom cli tools. I favor zero-dependency design, raw markdown and anti-bloat architecture for the systems I design.
 
 <div style="text-align: center;">
-  <a href="https://github.com/tecnolgd">GitHub</a> | 
-  <a href="https://discord.com/users/1475417150465380424">Discord</a>
+
+<a href="https://github.com/tecnolgd">GitHub</a> | <a href="https://discord.com/users/1475417150465380424">Discord</a>
+
 </div>
 
 ---
