@@ -11,10 +11,15 @@
 </div>
 
 
-
 ### Project Updates
-<!-- all project updates go here, shortform content-->
 
+- [Python project-1 release](projects.md#python-project-1-release) 
+- [Project dev launch #2](projects.md#project-dev-launch-2)
+- [cpp_3 Project release](projects.md#cpp_3-project-release)
+- [cpp_3 Project Updates](projects.md#cpp_3-project-updates)
+- [cpp_3 Project dev launch](projects.md#cpp_3-project-dev-launch)
+- [About Predicta Expense WEB](projects.md#about-predicta-expense-web)
+- [cpp_2 Project beta release](projects.md#cpp_2-project-beta-release)
 
 ### Technical Posts
 
