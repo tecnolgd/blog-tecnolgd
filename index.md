@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <!--native browser-level dark mode handling-->
 <meta name="color-scheme" content="dark light">
 
