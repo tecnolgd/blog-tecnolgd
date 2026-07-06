@@ -1,3 +1,5 @@
+<!--native browser-level dark mode handling-->
+<meta name="color-scheme" content="dark light">
 
 <h1 align = "center" style = "font-family: Georgia, serif; font-size: 40px">In the Shadows</h1>
 
