@@ -4,6 +4,8 @@ layout: null
 
 <!--native browser-level dark mode handling-->
 <meta name="color-scheme" content="dark light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <h1 align = "center" style = "font-family: Georgia, serif; font-size: 40px">In the Shadows</h1>
 
