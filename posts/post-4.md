@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <meta name="color-scheme" content="dark light">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
