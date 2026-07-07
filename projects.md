@@ -1,5 +1,7 @@
 <!--Project releases and updates file-->
 
+[← Back to Home](index.md)
+
 # Project Logs/Updates
 
 ## Python project-1 release
