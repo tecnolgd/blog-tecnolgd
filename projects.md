@@ -1,6 +1,6 @@
 <!--Project releases and updates file-->
 
-[← Back to Home](/index.md)
+[← Back to Home](index.md)
 
 # Project Logs/Updates
 
