@@ -1,6 +1,7 @@
 <meta name="color-scheme" content="dark light">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+[← Back to Home](/index.md)
 
 ## How I built a High Performance cache implementation
 *Apr 4, 2026 | Category: systems*
