@@ -1,4 +1,3 @@
-
 [← Back to Home](/index.md)
 
 ## Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades

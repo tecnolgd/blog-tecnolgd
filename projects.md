@@ -1,4 +1,3 @@
-
 [← Back to Home](index.md)
 
 # Project Logs/Updates

@@ -1,4 +1,3 @@
-
 [← Back to Home](/index.md)
 
 ## How I built a High Performance cache implementation

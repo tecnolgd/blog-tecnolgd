@@ -1,4 +1,3 @@
-
 [← Back to Home](/index.md)
 
 ## Minimalist Blogging websites using HTML and CSS
