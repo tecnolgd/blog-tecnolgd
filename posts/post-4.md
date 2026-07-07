@@ -1,3 +1,7 @@
+<meta name="color-scheme" content="dark light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 ## Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades
 *May 24, 2026| Category: Systems*
 
