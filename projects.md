@@ -1,4 +1,9 @@
-<!--Project releases and updates file-->
+---
+layout: null
+---
+
+<meta name="color-scheme" content="dark light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 [← Back to Home](index.md)
 
