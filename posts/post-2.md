@@ -1,4 +1,4 @@
-[← Back to Home](/index.md)
+[← Home](../index.md)
 
 ## Minimalist Blogging websites using HTML and CSS
 *Nov 20, 2025,  | Category: Design*

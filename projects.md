@@ -1,4 +1,4 @@
-[← Back to Home](index.md)
+[← Home](index.md)
 
 # Project Logs/Updates
 

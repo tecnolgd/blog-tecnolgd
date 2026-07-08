@@ -1,4 +1,4 @@
-[← Back to Home](/index.md)
+[← Home](../index.md)
 
 ## First post
 *Nov 20, 2025 | Category: Intro*
