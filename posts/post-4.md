@@ -1,4 +1,4 @@
-[← Back to Home](/index.md)
+[← Home](../index.md)
 
 ## Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades
 *May 24, 2026| Category: Systems*

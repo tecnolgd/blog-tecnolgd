@@ -1,4 +1,4 @@
-[← Back to Home](/index.md)
+[← Home](..ndex.md)
 
 ## How I built a High Performance cache implementation
 *Apr 4, 2026 | Category: systems*
