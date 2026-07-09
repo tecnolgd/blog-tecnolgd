@@ -16,7 +16,15 @@
   
 </div>
 
-A minimalist blog template for devs who value content over frameworks.
+A minimalist blog for devs who value content over frameworks.
+
+## Key Features
+
+## Installation and Build
+
+## Custom Setup
+
+
 
 > **Note**:
 > - The changes made after v0.1.0 are regarding the porting of the website to markdown.    
