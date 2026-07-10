@@ -16,7 +16,7 @@
   
 </div>
 
-A minimalist blog for devs who value content over frameworks.
+> A minimalist blog for devs who value content over frameworks.
 
 ## Key Features
 
@@ -24,7 +24,7 @@ A minimalist blog for devs who value content over frameworks.
 - **Pure Markdown Content**: Text over Tags
 - **Built-in RSS Feed**: Decentralized content syndication
 - **Optimized Dark Mode**: Customized theme for tecnical legibility.
-- **No-Maintenance Deployment**: Near-Zero config hell, thanks to page native processing via Jekyll.
+- **No-Maintenance Deployment**: Near-zero config hell, thanks to page native processing via Jekyll.
 
 ## Setup
 
