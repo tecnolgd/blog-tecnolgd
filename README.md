@@ -30,14 +30,15 @@ A minimalist blog for devs who value content over frameworks.
 
 1. Clone the repo.
     ```bash
-      git clone https://github.com/tecnolgd/blog-tecnolgd.git
+   git clone https://github.com/tecnolgd/blog-tecnolgd.git
     ```
     ```bash
-      cd blog-tecnolgd
+    cd blog-tecnolgd
     ```
 2. Edit `_config.yml` to set your theme.
 
 - My chosen theme
+
   ```yml
   remote_theme: jekyll/minima
 
