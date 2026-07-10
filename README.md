@@ -37,18 +37,18 @@ A minimalist blog for devs who value content over frameworks.
     ```
 2. Edit `_config.yml` to set your theme.
 
-- My chosen theme
+    - My chosen theme
 
-  ```yml
-  remote_theme: jekyll/minima
+      ```yml
+      remote_theme: jekyll/minima
 
-  minima:
-  skin: dark
-  ```
-- Some theme ideas:
-  - jekyll-theme-tactile
-  - jekyll-theme-hacker
-  - jekyll-theme-midnight
+      minima:
+      skin: dark
+      ```
+    - Some theme ideas:
+      - jekyll-theme-tactile
+      - jekyll-theme-hacker
+      - jekyll-theme-midnight
 
 3. Write your posts as pure text(`.md` files) inside the `posts/` directory.
 
