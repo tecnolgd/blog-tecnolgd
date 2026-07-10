@@ -20,12 +20,44 @@ A minimalist blog for devs who value content over frameworks.
 
 ## Key Features
 
-## Installation and Build
+- **Zero-Framework Minimalism**: Low-bloat architecture
+- **Pure Markdown Content**: Text over Tags
+- **Built-in RSS Feed**: Decentralized content syndication
+- **Optimized Dark Mode**: Customized theme for tecnical legibility.
+- **No-Maintenance Deployment**: Near-Zero config hell, thanks to page native processing via Jekyll.
 
-## Custom Setup
+## Setup
+
+1. Clone the repo.
+    ```bash
+   git clone https://github.com/tecnolgd/blog-tecnolgd.git
+    ```
+    ```bash
+    cd blog-tecnolgd
+    ```
+2. Edit `_config.yml` to set your theme.
+
+    - My chosen theme
+
+      ```yml
+      remote_theme: jekyll/minima
+
+      minima:
+      skin: dark
+      ```
+    - Some theme ideas:
+      - jekyll-theme-tactile
+      - jekyll-theme-hacker
+      - jekyll-theme-midnight
+
+3. Write your posts as pure text(`.md` files) inside the `posts/` directory.
 
 
+## Deployment
 
-> **Note**:
-> - The changes made after v0.1.0 are regarding the porting of the website to markdown.    
-> - The README would be written after the core of the markdown-based website is set.
+Hosted automatically via GitHub Pages using the `architect` theme engine.
+
+
+## License
+
+[MIT](LICENSE.md)
