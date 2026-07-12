@@ -1,6 +1,6 @@
 <h1 align = "center" style = "font-family: Georgia, serif; font-size: 40px">In the Shadows</h1>
 
-<h4 align = "center"> Minimalism is Maximalism.</h4>
+<h4 align = "center"> Minimalism is Maximalism</h4>
 
 <div style="text-align: center;">
   <a href="#project-updates">Project Updates</a> | 
