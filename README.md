@@ -58,6 +58,6 @@
 Hosted automatically via GitHub Pages using the `architect` theme engine.
 
 
-## License
-
-[MIT](LICENSE.md)
+## Author & License
+Author: tecnolgd     
+License: [MIT](LICENSE.md)
