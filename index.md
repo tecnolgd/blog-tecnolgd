@@ -31,6 +31,7 @@
 
 ### Releases
 
+- [blog-tecnolgd v0.2.0-Flat Markdown Pipeline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.2.0)
 - [blog-tecnolgd v0.1.0 - Local Builder Baseline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.1.0)
 - [velocache - v0.2.0 - Official Public Release](https://github.com/tecnolgd/velocache/releases/tag/v0.2.0-beta)
 - [TermiFlow v0.2.1 - Patch Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.1-beta)
