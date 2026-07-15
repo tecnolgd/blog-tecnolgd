@@ -50,7 +50,7 @@ I build low-level developer utilities, high-performance systems, and custom cli 
 
 <div style="text-align: center;">
 
-<a href="https://github.com/tecnolgd">GitHub</a> | <a href="https://discord.com/users/1475417150465380424">Discord</a>
+<a href="https://github.com/tecnolgd">GitHub</a> | <a href="https://discord.com/users/1475417150465380424">Discord</a> | <a href = "https://tecnolgd.github.io/portfolio-tecnolgd">Portfolio</a>
 
 </div>
 
