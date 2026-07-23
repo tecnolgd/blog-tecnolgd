@@ -31,17 +31,18 @@
 
 ### Releases
 
-- [blog-tecnolgd v0.2.0-Flat Markdown Pipeline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.2.0)
+- [libcvault-v2.0.0 - beta](https://github.com/tecnolgd/libcvault/releases/tag/v2.0.0-beta)
+- [blog-tecnolgd v0.2.0 - Flat Markdown Pipeline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.2.0)
 - [blog-tecnolgd v0.1.0 - Local Builder Baseline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.1.0)
-- [velocache - v0.2.0 - Official Public Release](https://github.com/tecnolgd/velocache/releases/tag/v0.2.0-beta)
+- [velocache - v0.2.0 - beta](https://github.com/tecnolgd/velocache/releases/tag/v0.2.0-beta)
 - [TermiFlow v0.2.1 - Patch Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.1-beta)
-- [repoScanner v0.2.0 - Official Stable Release](https://github.com/tecnolgd/repoScanner/releases#release-v0.2.0)
-- [TermiFlow v0.2.0 - Official Public Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.0-beta)
-- [velocache - v0.1.0 - Official Public Release](https://github.com/tecnolgd/velocache/releases/tag/v0.1.0-beta)
-- [repoScanner v0.0.1-beta](https://github.com/tecnolgd/repoScanner/releases#release-v0.1.0-beta)
-- [TermiFlow v0.1.1 - Official Public Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.1.1-beta)
-- [TermiFlow v0.1.0 - Official Public Release](https://github.com/tecnolgd/TermiFlow/releases#release-v0.1.0-beta)
-- [Code Vault beta release](https://github.com/tecnolgd/Code-Vault/releases/tag/v1.0.0-beta)
+- [repoScanner v0.2.0 - Stable](https://github.com/tecnolgd/repoScanner/releases#release-v0.2.0)
+- [TermiFlow v0.2.0 - beta](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.0-beta)
+- [velocache - v0.1.0 - beta](https://github.com/tecnolgd/velocache/releases/tag/v0.1.0-beta)
+- [repoScanner v0.0.1 - beta](https://github.com/tecnolgd/repoScanner/releases#release-v0.1.0-beta)
+- [TermiFlow v0.1.1 - beta](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.1.1-beta)
+- [TermiFlow v0.1.0 - beta](https://github.com/tecnolgd/TermiFlow/releases#release-v0.1.0-beta)
+- [Code Vault v1.0.0 - beta ](https://github.com/tecnolgd/Code-Vault/releases/tag/v1.0.0-beta)
 
 
 ### About Me
