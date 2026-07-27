@@ -31,6 +31,7 @@
 
 ### Releases
 
+- [TermiFlow v0.2.2 - Patch Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.2-beta)
 - [libcvault-v2.0.0 - beta](https://github.com/tecnolgd/libcvault/releases/tag/v2.0.0-beta)
 - [blog-tecnolgd v0.2.0 - Flat Markdown Pipeline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.2.0)
 - [blog-tecnolgd v0.1.0 - Local Builder Baseline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.1.0)
