@@ -31,6 +31,10 @@
 
 ### Releases
 
+- [v0.3.0-beta.9 - Patch](https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.9)
+- [v0.3.0-beta.3- Patch(Build & Packaging)](https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.3)
+- [v0.3.0-beta.2- PyPI packaging & CI wheel build pipeline](
+https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.2)
 - [repoScanner v0.3.0-beta.1 - Caching, Pure-Python Fallbacks & Native Wrapper Integration](https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.1)
 - [TermiFlow v0.2.2 - Patch Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.2-beta)
 - [libcvault-v2.0.0 - beta](https://github.com/tecnolgd/libcvault/releases/tag/v2.0.0-beta)
