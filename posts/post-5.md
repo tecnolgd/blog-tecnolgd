@@ -1,6 +1,6 @@
 [← Home](../index.md)
 
-## From Local Builds to `pip install`: repoScanner v0.3.0-beta.9
+## From Local Builds to pip install: repoScanner v0.3.0-beta.9
 *Aug 30, 2026 | Category: tools/build*
 
 > **Source(s)**
