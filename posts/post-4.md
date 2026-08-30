@@ -1,7 +1,7 @@
 [← Home](../index.md)
 
 ## Post-Mortem: Archiving My Hackathon Submission and Planning the Core Upgrades
-*May 24, 2026| Category: Systems*
+*May 24, 2026 | Category: Systems*
 
 A technical breakdown of my submission for the HackerRank Orchestrate Hackathon, creating a v0.1.0-beta baseline, and outlining the next optimization steps.
 
