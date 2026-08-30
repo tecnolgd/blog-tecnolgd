@@ -4,11 +4,12 @@
 *Aug 30, 2026 | Category: tools/build*
 
 > **Source(s)**
-> PyPI: [pypi.org/project/repoScanner](https://pypi.org/project/repoScanner/)
-> GitHub: [tecnolgd/repoScanner](https:github.com/tecnolgd/repoScanner)
+
+> PyPI: [pypi.org/project/repoScanner](https://pypi.org/project/repoScanner/)      
+> GitHub: [tecnolgd/repoScanner](https://github.com/tecnolgd/repoScanner)
 
 
-I recently shipped the latest version of [repoScanner](https:github.com/tecnolgd/repoScanner), making it fully installable via `pip`. 
+I recently shipped the latest version of [repoScanner](https://github.com/tecnolgd/repoScanner), making it fully installable via `pip`. 
 
 It turned out to be one of the most tedious release cycles I’ve worked on. The goal was to package prebuilt C++ binaries so users could run a simple `pip install repoScanner` and immediately get native performance without touching `gcc`, `make`, or local build dependencies. Watching it run seamlessly in a fresh environment made the trial-and-error completely worth it.
 
