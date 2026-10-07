@@ -32,6 +32,7 @@
 
 ### Releases
 
+- [repoScanner v0.3.0-beta.10](https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.10)
 - [libcvault v2.1.0-beta - Recursive Scanning and Performance Improvements](https://github.com/tecnolgd/libcvault/releases/tag/v2.1.0-beta)
 - [v0.3.0-beta.9 - Patch](https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.9)
 - [v0.3.0-beta.3 - Patch(Build & Packaging)](https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.3)
@@ -39,18 +40,18 @@
 https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.2)
 - [repoScanner v0.3.0-beta.1 - Caching, Pure-Python Fallbacks & Native Wrapper Integration](https://github.com/tecnolgd/repoScanner/releases/tag/v0.3.0-beta.1)
 - [TermiFlow v0.2.2 - Patch Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.2-beta)
-- [libcvault-v2.0.0 - beta](https://github.com/tecnolgd/libcvault/releases/tag/v2.0.0-beta)
+- [libcvault v2.0.0-beta](https://github.com/tecnolgd/libcvault/releases/tag/v2.0.0-beta)
 - [blog-tecnolgd v0.2.0 - Flat Markdown Pipeline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.2.0)
 - [blog-tecnolgd v0.1.0 - Local Builder Baseline](https://github.com/tecnolgd/blog-tecnolgd/releases/tag/v0.1.0)
-- [velocache - v0.2.0 - beta](https://github.com/tecnolgd/velocache/releases/tag/v0.2.0-beta)
+- [velocache v0.2.0-beta](https://github.com/tecnolgd/velocache/releases/tag/v0.2.0-beta)
 - [TermiFlow v0.2.1 - Patch Release](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.1-beta)
-- [repoScanner v0.2.0 - Stable](https://github.com/tecnolgd/repoScanner/releases#release-v0.2.0)
-- [TermiFlow v0.2.0 - beta](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.0-beta)
-- [velocache - v0.1.0 - beta](https://github.com/tecnolgd/velocache/releases/tag/v0.1.0-beta)
-- [repoScanner v0.0.1 - beta](https://github.com/tecnolgd/repoScanner/releases#release-v0.1.0-beta)
-- [TermiFlow v0.1.1 - beta](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.1.1-beta)
-- [TermiFlow v0.1.0 - beta](https://github.com/tecnolgd/TermiFlow/releases#release-v0.1.0-beta)
-- [Code Vault v1.0.0 - beta ](https://github.com/tecnolgd/Code-Vault/releases/tag/v1.0.0-beta)
+- [repoScanner v0.2.0-Stable](https://github.com/tecnolgd/repoScanner/releases#release-v0.2.0)
+- [TermiFlow v0.2.0-beta](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.2.0-beta)
+- [velocache v0.1.0-beta](https://github.com/tecnolgd/velocache/releases/tag/v0.1.0-beta)
+- [repoScanner v0.0.1-beta](https://github.com/tecnolgd/repoScanner/releases#release-v0.1.0-beta)
+- [TermiFlow v0.1.1-beta](https://github.com/tecnolgd/TermiFlow/releases/tag/v0.1.1-beta)
+- [TermiFlow v0.1.0-beta](https://github.com/tecnolgd/TermiFlow/releases#release-v0.1.0-beta)
+- [Code Vault v1.0.0-beta](https://github.com/tecnolgd/Code-Vault/releases/tag/v1.0.0-beta)
 
 
 ### About Me
